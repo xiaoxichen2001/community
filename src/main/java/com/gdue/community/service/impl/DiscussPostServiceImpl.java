@@ -90,6 +90,7 @@ public class DiscussPostServiceImpl implements DiscussPostService {
     @Override
     public List<DiscussPost> findDiscussPost(int userId, int offset, int limit,int orderMode) {
         if (userId==0&&orderMode==1){
+            //当满足条件时，优先从Caffeine缓存中取数据
             return postListCache.get(offset+":"+limit);
         }
 
@@ -101,6 +102,7 @@ public class DiscussPostServiceImpl implements DiscussPostService {
     public int findDiscussPostRows(int userId) {
 
         if (userId==0){
+            //当满足条件时，优先从缓存中取数据
             return postRowsCache.get(userId);
         }
         return discussPostMapper.selectDiscussPostRows(userId);
