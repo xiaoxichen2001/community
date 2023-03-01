@@ -89,8 +89,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter    implements C
                             PrintWriter writer = response.getWriter();
                             writer.write(CommunityUtil.getJSONString(403,"你没有访问此功能的权限!"));
                         }else {
-
-                            System.out.println("=========");
                             response.sendRedirect(request.getContextPath()+"/denied");
                         }
                     }

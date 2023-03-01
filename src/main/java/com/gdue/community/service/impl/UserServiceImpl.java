@@ -1,6 +1,5 @@
 package com.gdue.community.service.impl;
 
-//import com.nowcoder.community.dao.LoginTicketMapper;
 import com.gdue.community.dao.UserMapper;
 import com.gdue.community.entity.LoginTicket;
 import com.gdue.community.entity.User;
@@ -9,7 +8,7 @@ import com.gdue.community.util.CommunityConstant;
 import com.gdue.community.util.CommunityUtil;
 import com.gdue.community.util.MailClient;
 import com.gdue.community.util.RedisKeyUtil;
-import com.nowcoder.community.util.*;
+import com.gdue.community.util.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

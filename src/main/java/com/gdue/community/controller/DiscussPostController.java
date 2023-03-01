@@ -10,7 +10,6 @@ import com.gdue.community.util.CommunityConstant;
 import com.gdue.community.util.CommunityUtil;
 import com.gdue.community.util.HostHolder;
 import com.gdue.community.util.RedisKeyUtil;
-import com.nowcoder.community.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;

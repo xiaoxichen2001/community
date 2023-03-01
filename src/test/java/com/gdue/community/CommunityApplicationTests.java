@@ -240,6 +240,4 @@ class CommunityApplicationTests {
                 list.add(discussPost);
             }
         }
-
-
 }

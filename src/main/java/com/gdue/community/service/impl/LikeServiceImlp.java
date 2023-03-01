@@ -25,6 +25,7 @@ public class LikeServiceImlp implements LikeService {
                 String  entityLikeKey= RedisKeyUtil.getEntityLikeKey(entityType,entityId);
                 String  userlikeKey=RedisKeyUtil.getUserLikeKey(entityUserId);
 
+                //把userId存到帖子点赞对应的集合中
                 boolean isMember    =   operations.opsForSet().isMember(entityLikeKey,userId);
 
                 //开启redis事务
